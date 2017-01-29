@@ -1,0 +1,2 @@
+#!/bin/sh
+/app/bin/batsd -c /app/config.yml truncate 60
