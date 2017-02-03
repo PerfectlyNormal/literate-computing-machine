@@ -18,7 +18,7 @@ RUN mkdir -p /app \
 RUN mkdir -p /data/batsd /data/redis \
   && chown -R batsd:batsd /data/batsd \
   && chown -R redis:redis /data/redis \
-  && chmod 700 /data/
+  && chmod 755 /data
 VOLUME /data
 
 ADD etc/hourly-truncate /etc/periodic/hourly/batsd-truncate
